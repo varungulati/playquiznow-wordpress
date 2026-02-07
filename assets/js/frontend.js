@@ -15,10 +15,10 @@
 		}
 
 		switch ( data.type ) {
-			case 'playquiznow:resize':
+			case 'pqn-resize':
 				handleResize( event, data );
 				break;
-			case 'playquiznow:quiz-complete':
+			case 'pqn-quiz-complete':
 				handleQuizComplete( data );
 				break;
 		}
