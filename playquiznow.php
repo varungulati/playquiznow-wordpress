@@ -3,8 +3,7 @@
  * Plugin Name: PlayQuizNow
  * Plugin URI:  https://playquiznow.com/wordpress-plugin
  * Description: Embed interactive quizzes from PlayQuizNow into your WordPress site with a shortcode or Gutenberg block.
- * Version:     1.0.1
- * Author:      PlayQuizNow
+ * Version:              1.0.4 * Author:      PlayQuizNow
  * Author URI:  https://playquiznow.com
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,8 +21,7 @@ if ( defined( 'PLAYQUIZNOW_VERSION' ) ) {
 	return;
 }
 
-define( 'PLAYQUIZNOW_VERSION', '1.0.1' );
-define( 'PLAYQUIZNOW_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'PLAYQUIZNOW_VERSION', '1.0.4' );
 define( 'PLAYQUIZNOW_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'PLAYQUIZNOW_EMBED_BASE', 'https://playquiznow.com/embed/' );
 
