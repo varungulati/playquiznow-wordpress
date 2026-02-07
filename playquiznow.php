@@ -32,11 +32,6 @@ require_once PLAYQUIZNOW_PLUGIN_DIR . 'includes/class-shortcode.php';
 require_once PLAYQUIZNOW_PLUGIN_DIR . 'includes/class-gutenberg-block.php';
 require_once PLAYQUIZNOW_PLUGIN_DIR . 'includes/class-settings.php';
 
-add_action( 'init', 'playquiznow_load_textdomain' );
-
-function playquiznow_load_textdomain() {
-	load_plugin_textdomain( 'playquiznow', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-}
 
 register_activation_hook( __FILE__, 'playquiznow_activate' );
 
