@@ -3,7 +3,7 @@ Contributors: playquiznow
 Tags: quiz, embed, interactive, assessment, education
 Requires at least: 5.8
 Tested up to: 6.9
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -50,6 +50,11 @@ Yes. The embedded quiz communicates its height via postMessage and the iframe ad
 Yes. If Google Analytics (gtag.js) is loaded on your site, a `quiz_complete` event is fired automatically when a user finishes a quiz.
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed iframe auto-resize not working (postMessage event type mismatch).
+* Removed deprecated load_plugin_textdomain() call.
+* Updated "Tested up to" to WordPress 6.9.
 
 = 1.0.0 =
 * Initial release.

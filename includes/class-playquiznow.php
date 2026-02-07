@@ -91,14 +91,6 @@ class PlayQuizNow {
 		$html .= ' data-quiz-id="' . esc_attr( $quiz_id ) . '"';
 		$html .= '></iframe>';
 
-		if ( get_option( 'playquiznow_show_branding', '1' ) === '1' ) {
-			$html .= '<div class="playquiznow-branding">';
-			$html .= '<a href="https://playquiznow.com" target="_blank" rel="noopener noreferrer">'
-				. esc_html__( 'Powered by PlayQuizNow', 'playquiznow' )
-				. '</a>';
-			$html .= '</div>';
-		}
-
 		$html .= '</div>';
 
 		return $html;
