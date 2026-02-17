@@ -1,5 +1,5 @@
 === PlayQuizNow ===
-Contributors: playquiznow
+Contributors: playquiznow, varun-gulati
 Tags: quiz, embed, interactive, assessment, education
 Requires at least: 5.8
 Tested up to: 6.9
@@ -21,7 +21,6 @@ PlayQuizNow lets you create beautiful, interactive quizzes and embed them anywhe
 * Lazy loading for better page performance
 * Google Analytics event tracking on quiz completion
 * Configurable default settings
-* "Powered by PlayQuizNow" branding (can be turned off)
 
 == Installation ==
 

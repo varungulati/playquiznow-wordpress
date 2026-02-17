@@ -32,11 +32,6 @@ class PlayQuizNow_Settings {
 			'sanitize_callback' => array( __CLASS__, 'sanitize_height' ),
 			'default'           => 500,
 		) );
-		register_setting( 'playquiznow_settings', 'playquiznow_show_branding', array(
-			'type'              => 'string',
-			'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
-			'default'           => '1',
-		) );
 		register_setting( 'playquiznow_settings', 'playquiznow_lazy_load', array(
 			'type'              => 'string',
 			'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
@@ -52,7 +47,6 @@ class PlayQuizNow_Settings {
 
 		add_settings_field( 'playquiznow_default_width', __( 'Default Width', 'playquiznow' ), array( __CLASS__, 'field_width' ), 'playquiznow', 'playquiznow_defaults' );
 		add_settings_field( 'playquiznow_default_height', __( 'Default Height (px)', 'playquiznow' ), array( __CLASS__, 'field_height' ), 'playquiznow', 'playquiznow_defaults' );
-		add_settings_field( 'playquiznow_show_branding', __( 'Show Branding', 'playquiznow' ), array( __CLASS__, 'field_branding' ), 'playquiznow', 'playquiznow_defaults' );
 		add_settings_field( 'playquiznow_lazy_load', __( 'Lazy Load', 'playquiznow' ), array( __CLASS__, 'field_lazy_load' ), 'playquiznow', 'playquiznow_defaults' );
 	}
 
@@ -73,12 +67,6 @@ class PlayQuizNow_Settings {
 	public static function field_height() {
 		$value = get_option( 'playquiznow_default_height', 500 );
 		echo '<input type="number" name="playquiznow_default_height" value="' . esc_attr( $value ) . '" min="100" step="1" class="small-text" /> px';
-	}
-
-	public static function field_branding() {
-		$checked = get_option( 'playquiznow_show_branding', '1' );
-		echo '<label><input type="checkbox" name="playquiznow_show_branding" value="1" ' . checked( $checked, '1', false ) . ' /> ';
-		echo esc_html__( 'Display "Powered by PlayQuizNow" link below the quiz.', 'playquiznow' ) . '</label>';
 	}
 
 	public static function field_lazy_load() {
