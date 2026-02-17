@@ -3,7 +3,7 @@ Contributors: playquiznow, varun-gulati
 Tags: quiz, embed, interactive, assessment, education
 Requires at least: 5.8
 Tested up to: 6.9
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,12 @@ Yes. The embedded quiz communicates its height via postMessage and the iframe ad
 Yes. If Google Analytics (gtag.js) is loaded on your site, a `quiz_complete` event is fired automatically when a user finishes a quiz.
 
 == Changelog ==
+
+= 1.0.5 =
+* Added varun-gulati as contributor
+* Removed branding feature for Guideline 10 compliance
+* Fixed missing PLAYQUIZNOW_PLUGIN_DIR constant
+* Fixed malformed plugin header
 
 = 1.0.4 =
 * Fixed iframe auto-resize event handling for improved widget stability
