@@ -3,7 +3,7 @@ Contributors: playquiznow, varun-gulati
 Tags: quiz, embed, interactive, assessment, education
 Requires at least: 5.8
 Tested up to: 6.9
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,7 +47,27 @@ Yes. The embedded quiz communicates its height via postMessage and the iframe ad
 
 Yes. If Google Analytics (gtag.js) is loaded on your site, a `quiz_complete` event is fired automatically when a user finishes a quiz.
 
+== External services ==
+
+This plugin embeds interactive quizzes by loading content from the PlayQuizNow platform in an iframe.
+
+When a page containing an embedded quiz is viewed, the visitor's browser makes a request to playquiznow.com. This sends:
+* The quiz ID (to load the correct quiz)
+* Theme preference (light or dark)
+* Source identifier (wordpress)
+* Standard browser information (IP address, user agent, referring page) as part of the HTTP request
+
+This data is sent every time a page with an embedded quiz is loaded by a visitor.
+
+This service is provided by PlayQuizNow:
+* Service: [https://playquiznow.com](https://playquiznow.com)
+* Terms of Service: [https://playquiznow.com/terms-of-service](https://playquiznow.com/terms-of-service)
+* Privacy Policy: [https://playquiznow.com/privacy-policy](https://playquiznow.com/privacy-policy)
+
 == Changelog ==
+
+= 1.0.6 =
+* Added external services disclosure to readme.txt
 
 = 1.0.5 =
 * Added varun-gulati as contributor
